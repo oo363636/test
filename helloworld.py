@@ -21,3 +21,5 @@
 name = 'ab;cd|efg|hi,jkl|mn\topq;rst,uvw\txyz'
 import re
 print(re.split('[;,|\t]',name))
+
+#用来测试一下
