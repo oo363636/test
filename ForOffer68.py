@@ -25,6 +25,15 @@ class ForOffer68:
 
 
 if __name__ == '__main__':
+
+    """                  6
+                       /  \
+                      2    8
+                     / \  / \
+                    0  4  7  9
+                      / \
+                     3  5
+    """
     root1 = ForOffer68.TreeNode(6)
     root1.left = ForOffer68.TreeNode(2)
     root1.right = ForOffer68.TreeNode(8)
@@ -37,4 +46,5 @@ if __name__ == '__main__':
     root2 = ForOffer68()
     p = root2.lowestCommonAncestor(root=root1, p=ForOffer68.TreeNode(2)
                                    , q=ForOffer68.TreeNode(4))
-    print(p)
+    print(p.val) #2
+
