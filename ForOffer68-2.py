@@ -1,15 +1,15 @@
 """给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。"""
 
 
-class ForOffer68_2:
+class ForOffer6800:
     class TreeNode:
         def __init__(self, x):
             self.val = x
             self.left = None
             self.right = None
 
-    def lowestCommonAncestor(self, root, p, q) -> TreeNode:
-        if not root or root == p or root == q:
+    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+        if (not root) or (root == p) or (root == q):
             return root
         left = self.lowestCommonAncestor(root.left, p, q)
         right = self.lowestCommonAncestor(root.right, p, q)
@@ -29,19 +29,19 @@ if __name__ == '__main__':
                         / \
                        7  4
     """
-    root1 = ForOffer68_2.TreeNode(3)
-    root1.left = ForOffer68_2.TreeNode(5)
-    root1.right = ForOffer68_2.TreeNode(1)
-    root1.left.left = ForOffer68_2.TreeNode(6)
-    root1.left.right = ForOffer68_2.TreeNode(2)
-    root1.left.right.left = ForOffer68_2.TreeNode(7)
-    root1.left.right.right = ForOffer68_2.TreeNode(4)
-    root1.right.left = ForOffer68_2.TreeNode(0)
-    root1.right.right = ForOffer68_2.TreeNode(8)
-    root2 = ForOffer68_2()
-    res = root2.lowestCommonAncestor(root=root1, p=ForOffer68_2.TreeNode(5)
-                                     , q=ForOffer68_2.TreeNode(4))
-    print(res.val)
+    root1 = ForOffer6800.TreeNode(3)
+    root1.left = ForOffer6800.TreeNode(5)
+    root1.right = ForOffer6800.TreeNode(1)
+    root1.left.left = ForOffer6800.TreeNode(6)
+    root1.left.right = ForOffer6800.TreeNode(2)
+    root1.left.right.left = ForOffer6800.TreeNode(7)
+    root1.left.right.right = ForOffer6800.TreeNode(4)
+    root1.right.left = ForOffer6800.TreeNode(0)
+    root1.right.right = ForOffer6800.TreeNode(8)
+    root2 = ForOffer6800()
+    res = root2.lowestCommonAncestor(root=root1, p=ForOffer6800.TreeNode(5)
+                                     , q=ForOffer6800.TreeNode(4))
+    print(res)
 
 """Traceback (most recent call last):
   File "D:/PyCharmProject/test/ForOffer68-2.py", line 44, in <module>

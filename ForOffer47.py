@@ -4,21 +4,23 @@
 """
 from typing import List
 
+
 class ForOffer47:
-    def max_value(self, grid:List[List[int]]) -> int:
+    def max_value(self, grid: List[List[int]]) -> int:
         # grid[0][0] = grid[0][0]
         for i in range(len(grid)):
             for j in range(len(grid[0])):
                 if i == 0 and j == 0:
                     continue
                 if i == 0 and j != 0:
-                    grid[i][j] = grid[i][j] + grid[i][j-1]
+                    grid[i][j] = grid[i][j] + grid[i][j - 1]
                 if i != 0 and j == 0:
-                    grid[i][j] = grid[i][j] + grid[i-1][j]
+                    grid[i][j] = grid[i][j] + grid[i - 1][j]
                 if i != 0 and j != 0:
-                    grid[i][j] = grid[i][j] + max(grid[i-1][j],grid[i][j-1])
-        return grid[len(grid)-1][len(grid[0])-1]
+                    grid[i][j] = grid[i][j] + max(grid[i - 1][j], grid[i][j - 1])
+        return grid[len(grid) - 1][len(grid[0]) - 1]
         # 这里可以用grid[-1][-1]表示最后一行
+
 
 if __name__ == '__main__':
     mv1 = ForOffer47()
