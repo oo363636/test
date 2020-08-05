@@ -19,6 +19,7 @@ if __name__ == '__main__':
     print(mp.max_profit([7, 6, 4, 3, 1]))  # 0
 
 
+
 """
     更优雅的方式：
     def maxProfit(self, prices: List[int]) -> int:
