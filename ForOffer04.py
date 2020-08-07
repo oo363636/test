@@ -13,7 +13,7 @@ class ForOffer04:
             return False
         rows = len(matrix)
         columns = len(matrix[0])
-        row = rows-1
+        row = rows - 1
         column = 0
         while row >= 0 and column < columns:
             number = matrix[row][column]
