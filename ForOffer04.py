@@ -11,7 +11,6 @@ class ForOffer04:
 
         if not matrix or len(matrix) == 0 or len(matrix[0]) == 0:
             return False
-
         rows = len(matrix)
         columns = len(matrix[0])
         row = rows-1
@@ -36,4 +35,5 @@ if __name__ == '__main__':
         [10, 13, 14, 17, 24],
         [18, 21, 23, 26, 30]
     ], 21)
+
     print(res)
