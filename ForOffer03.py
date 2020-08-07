@@ -4,6 +4,7 @@
 """
 
 
+
 class ForOffer03:
     def find_repeat_number(self, nums: [int]) -> int:
         """利用集合set"""
