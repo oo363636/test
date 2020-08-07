@@ -28,7 +28,6 @@ class ForOffer04:
 
 if __name__ == '__main__':
     find = ForOffer04()
-
     res = find.find_number_in_2Darray([
         [1, 4, 7, 11, 15],
         [2, 5, 8, 12, 19],
