@@ -18,3 +18,4 @@ class ForOffer05:
 if __name__ == '__main__':
     test = ForOffer05()
     print(test.replace_space('  abcd ddd dd'))  # %20%20abcd%20ddd%20dd
+
