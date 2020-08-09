@@ -15,6 +15,7 @@ if __name__ == '__main__':
     test = ForOffer1002()
     print(test.num_ways(7))
 
+
 """
     这题就主要是理解：
     跳上n个台阶有f（n）种跳法，它的最后一步只有1或者2
