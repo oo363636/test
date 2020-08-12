@@ -31,3 +31,4 @@ if __name__ == '__main__':
     test = Solution()
     print(test.replace_rbig([16, 17, 4, 3, 5, 2]))
     print(test.replace_rbig([16, 1, 4, 8, 3, 2]))
+
