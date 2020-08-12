@@ -29,3 +29,4 @@ class ForOffer21:
 if __name__ == '__main__':
     test = ForOffer21()
     print(test.exchange([1, 2, 3, 4]))
+
