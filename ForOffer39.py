@@ -14,13 +14,13 @@ class Solution:
         for num in nums:
             if count == 0:
                 x = num
-            num += 1 if num == x else -1
+            count += 1 if num == x else -1
         return x
 
 
 if __name__ == '__main__':
     test = Solution()
     c = test.majority_element([1, 2, 3, 2, 2, 2, 5, 4, 2])
-    d = test.majority_element([3, 2, 3])
+    d = test.majority_element([3, 3, 4])
     print(c)  # 2
     print(d)  # 3
