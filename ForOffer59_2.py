@@ -36,3 +36,4 @@ if __name__ == '__main__':
     print(test.max_value())  # 2
     print(test.pop_front())  # 1
     print(test.max_value())  # 2
+
